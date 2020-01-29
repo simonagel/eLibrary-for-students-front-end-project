@@ -1,0 +1,19 @@
+function pocetnaStrana(){
+let body = $("body");
+let divLogin = $("<div>").attr("id", "divLogin" );
+body.append(divLogin);
+let divImg = $("<div>").attr({"id":"divImg", "class":"divPocetna"});
+body.append(divImg);
+let divTitle = $("<h1>").html("Ova e proekt za biblioteka");
+divTitle.addClass("firsTitle");
+divLogin.append(divTitle);
+let divBlack = $("<div>").attr({"id":"divBlack", "class":"divPocetna"});
+divImg.append(divBlack);
+//divBlack.text("e lybrary");
+let spanE = $("<p>").html("e").addClass("spane");
+let spanLyb = $("<p>").html("lybrari").addClass("spanlyb");
+divBlack.append(spanE);
+divBlack.append(spanLyb);
+}
+
+pocetnaStrana();
